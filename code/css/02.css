@@ -1,0 +1,38 @@
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.list {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+}
+
+.item a {
+    display: flex;
+    align-items: center;
+    background-color: #384553;
+    color: #fff;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.item a::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icon-tag.svg);
+    background-size: contain;
+    vertical-align: middle;
+}

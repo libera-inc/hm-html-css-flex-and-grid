@@ -1,0 +1,27 @@
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 64px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 276px;
+        gap: 40px;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.text {
+    line-height: 1.75;
+    letter-spacing: 0.1em;
+}

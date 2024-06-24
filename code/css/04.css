@@ -1,0 +1,36 @@
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 24px;
+}
+
+.thumbnail {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.article {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .article {
+        width: calc((100% / 2) - (24px * 1 / 2));
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .article:not(:nth-child(1), :nth-child(2)) {
+        width: calc((100% / 3) - (24px * 2 / 3));
+    }
+}
